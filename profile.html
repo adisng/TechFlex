@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechFlex - Profile</title>
+    <link rel="stylesheet" href="profile-styles.css">
+    <script defer src="profile-scripts.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>TechFlex</h1>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="workout.html">Workout Plan</a></li>
+                <li><a href="diet.html">Diet Plan</a></li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="profile">
+            <h2>Your Profile</h2>
+            <div class="profile-details">
+                <h3>Account Information</h3>
+                <form id="profileForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+
+                    <label for="password">New Password:</label>
+                    <input type="password" id="password" placeholder="Enter a new password">
+
+                    <label for="confirmPassword">Confirm Password:</label>
+                    <input type="password" id="confirmPassword" placeholder="Confirm your new password">
+
+                    <button type="submit" class="cta-btn">Save Changes</button>
+                </form>
+            </div>
+
+            <div class="settings">
+                <h3>Preferences</h3>
+                <form>
+                    <label>
+                        <input type="checkbox" id="notifications"> Enable Notifications
+                    </label>
+                    <label>
+                        <input type="checkbox" id="darkMode"> Dark Mode
+                    </label>
+                </form>
+            </div>
+
+            <div class="account-actions">
+                <h3>Account Actions</h3>
+                <button class="deactivate-btn">Deactivate Account</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 TechFlex Gym. All rights reserved.</p>
+    </footer>
+</body>
+</html>

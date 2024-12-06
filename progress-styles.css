@@ -1,0 +1,122 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: #222;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1 {
+    font-size: 24px;
+}
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+header nav ul li {
+    margin: 0 15px;
+}
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+header nav ul li a:hover {
+    color: #ffa500;
+}
+
+/* Progress Tracker Section */
+.progress-tracker {
+    padding: 20px;
+    background: #fff;
+    max-width: 800px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.progress-tracker h2, h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+form label {
+    font-weight: bold;
+}
+form input, form button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+form button {
+    background: #ffa500;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+form button:hover {
+    background: #ff7600;
+}
+
+/* Chart */
+.chart-container {
+    margin: 30px 0;
+    text-align: center;
+}
+
+/* History Table */
+.history-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+.history-container th, td {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 10px;
+}
+.history-container th {
+    background: #ffa500;
+    color: #fff;
+}
+.history-container tr:nth-child(even) {
+    background: #f4f4f4;
+}
+.history-container tr:nth-child(odd) {
+    background: #fff;
+}
+.history-container .actions button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.history-container .actions .edit {
+    background: #007bff;
+    color: #fff;
+}
+.history-container .actions .delete {
+    background: #dc3545;
+    color: #fff;
+}

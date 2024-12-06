@@ -1,0 +1,128 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f8f9fa;
+}
+
+/* Header */
+header {
+    background: #222;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1 {
+    font-size: 24px;
+}
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+header nav ul li {
+    margin: 0 15px;
+}
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+header nav ul li a:hover {
+    color: #ffa500;
+}
+
+/* Welcome Section */
+.welcome {
+    text-align: center;
+    padding: 20px;
+    background: #ffa500;
+    color: #fff;
+}
+.welcome h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+.welcome p {
+    font-size: 18px;
+}
+
+/* Quick Access Section */
+.quick-access {
+    padding: 20px;
+    background: #fff;
+}
+.quick-access h3 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.quick-access .cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.card {
+    flex: 1;
+    max-width: 300px;
+    background: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+.card h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.card p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+.card .cta-btn {
+    padding: 10px 15px;
+    background: #ffa500;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+.card .cta-btn:hover {
+    background: #ff7600;
+}
+
+/* Recent Activity */
+.recent-activity {
+    padding: 20px;
+    background: #f4f4f4;
+}
+.recent-activity h3 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+.recent-activity p {
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}

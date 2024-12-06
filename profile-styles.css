@@ -1,0 +1,112 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f8f9fa;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #222;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1 {
+    font-size: 24px;
+}
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+header nav ul li {
+    margin: 0 15px;
+}
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+header nav ul li a:hover {
+    color: #ffa500;
+}
+
+/* Profile Section */
+.profile {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.profile h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.profile h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.profile-details form,
+.settings form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.profile-details label,
+.settings label {
+    font-weight: bold;
+}
+.profile-details input[type="text"],
+.profile-details input[type="email"],
+.profile-details input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.profile-details .cta-btn {
+    padding: 10px 15px;
+    background: #ffa500;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.profile-details .cta-btn:hover {
+    background: #ff7600;
+}
+.account-actions .deactivate-btn {
+    padding: 10px 15px;
+    background: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.account-actions .deactivate-btn:hover {
+    background: #c82333;
+}
+
+/* Preferences */
+.settings label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+}
+.settings input[type="checkbox"] {
+    transform: scale(1.2);
+}

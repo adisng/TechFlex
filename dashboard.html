@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechFlex - Dashboard</title>
+    <link rel="stylesheet" href="dashboard-styles.css">
+    <script defer src="dashboard-scripts.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>TechFlex</h1>
+            <ul>
+                <li><a href="workout.html">Workout Plan</a></li>
+                <li><a href="diet.html">Diet Plan</a></li>
+                <li><a href="progress.html">Progress Tracker</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="welcome">
+            <h2>Welcome, <span id="userName">[User's Name]</span>!</h2>
+            <p>Your fitness journey starts here. Let’s crush your goals today!</p>
+        </section>
+
+        <section class="quick-access">
+            <h3>Quick Access</h3>
+            <div class="cards">
+                <div class="card">
+                    <h4>Workout Plan</h4>
+                    <p>View and customize your daily workouts.</p>
+                    <a href="workout.html" class="cta-btn">Go to Workouts</a>
+                </div>
+                <div class="card">
+                    <h4>Diet Plan</h4>
+                    <p>Check out meal suggestions tailored for you.</p>
+                    <a href="diet.html" class="cta-btn">Go to Diet Plan</a>
+                </div>
+                <div class="card">
+                    <h4>Progress Tracker</h4>
+                    <p>Track your weight, workouts, and more.</p>
+                    <a href="progress.html" class="cta-btn">Track Progress</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="recent-activity">
+            <h3>Recent Activity</h3>
+            <p><strong>Last Workout:</strong> Full Body Workout on <span id="lastWorkoutDate">[date]</span></p>
+            <p><strong>Next Goal:</strong> Run 5K under 30 minutes</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 TechFlex Gym. All rights reserved.</p>
+    </footer>
+</body>
+</html>
